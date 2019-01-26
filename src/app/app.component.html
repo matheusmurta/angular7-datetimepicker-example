@@ -1,0 +1,9 @@
+
+  <h2>Dialog</h2>
+  <label class="example-input-wrapper">
+      Date Time
+      <input placeholder="Date Time:" [(ngModel)]="dateTime"
+             [owlDateTime]="dt3" [owlDateTimeTrigger]="dt3" >
+      <owl-date-time [pickerMode]="'dialog'" #dt3></owl-date-time>
+  </label>
+  <h4>Valor do picker: {{dateTime}}</h4>
